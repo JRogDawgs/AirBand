@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { StyleSheet, ViewStyle, View } from "react-native";
-import { theme } from "@/theme";
+import { theme } from "@/theme/index";
 
 type PageProps = {
   children: ReactNode;

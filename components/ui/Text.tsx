@@ -1,5 +1,5 @@
 import { Text as RNText } from "react-native";
-import { theme } from "@/theme";
+import { theme } from "@/theme/index";
 
 export default function Text({ children, style, ...rest }) {
   return (

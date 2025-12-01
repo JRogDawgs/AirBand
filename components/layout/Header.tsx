@@ -1,6 +1,6 @@
 import { Image, StyleSheet, View } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
-import { theme } from "@/theme";
+import { theme } from "@/theme/index";
 
 import AirBandTextLogo from "@/assets/images/AirBand-Text-Only-Logo.png";
 

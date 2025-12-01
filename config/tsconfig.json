@@ -5,10 +5,9 @@
       "@/*": ["./*"],
       "@app/*": ["app/*"],
       "@components/*": ["components/*"],
-      "@services/*": ["services/*"],
-      "@state/*": ["state/*"],
       "@theme/*": ["theme/*"],
       "@utils/*": ["utils/*"],
+      "@hooks/*": ["hooks/*"],
       "@assets/*": ["assets/*"]
     }
   },
