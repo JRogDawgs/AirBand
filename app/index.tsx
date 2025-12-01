@@ -1,4 +1,6 @@
+import { Redirect } from "expo-router";
+
 export default function IndexScreen() {
-  return null;
+  return <Redirect href="/dashboard/home" />;
 }
 
