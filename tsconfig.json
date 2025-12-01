@@ -1,16 +1,4 @@
 {
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./*"],
-      "@app/*": ["app/*"],
-      "@components/*": ["components/*"],
-      "@services/*": ["services/*"],
-      "@state/*": ["state/*"],
-      "@theme/*": ["theme/*"],
-      "@utils/*": ["utils/*"],
-      "@assets/*": ["assets/*"]
-    }
-  },
+  "compilerOptions": {},
   "extends": "expo/tsconfig.base"
 }
