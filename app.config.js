@@ -1,4 +1,7 @@
+import config from "./config/app.json";
+
 export default {
-  extends: "./config/app.json",
+  ...config,
+  extra: {},
 };
 
