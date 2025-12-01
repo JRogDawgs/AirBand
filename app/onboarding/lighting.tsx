@@ -3,7 +3,7 @@ import { View, StyleSheet, Text, Animated, TouchableOpacity } from "react-native
 import { Camera } from "expo-camera";
 import { LinearGradient } from "expo-linear-gradient";
 import { useRouter } from "expo-router";
-import { theme } from "@/theme";
+import { theme } from "@/theme/index";
 import { getBrightnessFromRGBA } from "@/utils/lighting";
 
 export default function LightingScreen() {

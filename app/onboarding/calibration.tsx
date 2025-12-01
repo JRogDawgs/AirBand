@@ -3,7 +3,7 @@ import { View, StyleSheet, Text, Animated, TouchableOpacity } from "react-native
 import { Camera } from "expo-camera";
 import { useRouter } from "expo-router";
 import { LinearGradient } from "expo-linear-gradient";
-import { theme } from "@/theme";
+import { theme } from "@/theme/index";
 import HandOverlay from "@/components/overlay/HandOverlay";
 import { useHandTracking } from "@/hooks/useHandTracking";
 import { isHandInsideCircle } from "@/utils/gestures";

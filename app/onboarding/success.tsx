@@ -1,6 +1,6 @@
 import { View, StyleSheet, Text } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
-import { theme } from "@/theme";
+import { theme } from "@/theme/index";
 
 export default function Success() {
   return (

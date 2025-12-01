@@ -16,8 +16,7 @@ export const theme = {
   gradients,
 };
 
-export * from "./colors";
-export * from "./spacing";
-export * from "./typography";
-export { theme };
+export type Theme = typeof theme;
 
+export { colors, spacing, typography };
+export default theme;

@@ -4,7 +4,7 @@ import { Camera } from "expo-camera";
 import { LinearGradient } from "expo-linear-gradient";
 import { useRouter } from "expo-router";
 
-import { theme } from "@/theme";
+import { theme } from "@/theme/index";
 import AirBandTextLogo from "@/assets/images/AirBand-Text-Only-Logo.png";
 
 export default function CameraPermissionsScreen() {

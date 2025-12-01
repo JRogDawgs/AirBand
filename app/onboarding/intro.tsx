@@ -3,7 +3,7 @@ import { Animated, StyleSheet, Image, TouchableOpacity, View } from "react-nativ
 import { useRouter } from "expo-router";
 import { LinearGradient } from "expo-linear-gradient";
 
-import { theme } from "@/theme";
+import { theme } from "@/theme/index";
 import Page from "@/components/layout/Page";
 
 import AirBandLogo from "@/assets/images/AirBand-Logo.png";
