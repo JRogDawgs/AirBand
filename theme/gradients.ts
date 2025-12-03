@@ -1,6 +1,6 @@
 export const gradients = {
   neonPrimary: ["#00C6FF", "#7A00FF"],
-  neonPinkPurple: ["#FF0CF9", "#7A00FF"],
+  neonPinkPurple: ["#00C6FF", "#7A00FF", "#FF0CF9"],
   neonBluePink: ["#00C6FF", "#FF0CF9"],
 
   goldShimmer: ["#F8D56A", "#C99700"],

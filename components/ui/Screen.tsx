@@ -1,5 +1,6 @@
 import React from "react";
 import { View, StyleSheet, ViewStyle } from "react-native";
+import AnimatedWaveBackground from "@/components/backgrounds/AnimatedWaveBackground";
 import { theme } from "@/theme/index";
 
 interface Props {
@@ -8,16 +9,18 @@ interface Props {
 }
 
 export function ABScreen({ children, style }: Props) {
-  return <View style={[styles.container, style]}>{children}</View>;
+  return (
+    <AnimatedWaveBackground>
+      <View style={[styles.container, style]}>{children}</View>
+    </AnimatedWaveBackground>
+  );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: theme.colors.background,
     padding: theme.spacing.lg,
   },
 });
 
 export default ABScreen;
-
