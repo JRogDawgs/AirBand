@@ -20,5 +20,19 @@ export const colors = {
   // Status / feedback
   danger: "#FF4E4E",
   success: "#4EFFA1",
+
+  // Neon System
+  neonBlue: "#00C6FF",
+  neonPurple: "#7A00FF",
+  neonPink: "#FF0CF9",
+
+  // Neon glow intensities
+  neonBlueSoft: "rgba(0, 198, 255, 0.45)",
+  neonPurpleSoft: "rgba(122, 0, 255, 0.45)",
+  neonPinkSoft: "rgba(255, 12, 249, 0.45)",
+
+  // Premium Gold
+  goldBright: "#F8D56A",
+  goldDeep: "#C99700",
 };
 
