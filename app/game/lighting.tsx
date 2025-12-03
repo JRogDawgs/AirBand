@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { View, StyleSheet } from "react-native";
+import { Platform, View, StyleSheet, Text } from "react-native";
 import { Camera } from "expo-camera";
 import { router } from "expo-router";
 import { StageBackground } from "@/components/backgrounds/StageBackground";
@@ -8,7 +8,9 @@ import { ABButton } from "@/components/ui/Button";
 import { theme } from "@/theme/index";
 
 export default function LightingCheck() {
+  console.log("DEBUG: LightingCheck mounted");
   const [ready, setReady] = useState(false);
+  console.log("DEBUG: Ready state =", ready);
   const cameraRef = useRef<Camera | null>(null);
 
   async function startCamera() {
@@ -27,16 +29,24 @@ export default function LightingCheck() {
     startCamera();
   }, []);
 
+  console.log("DEBUG: StageBackground rendered");
+  
   return (
     <StageBackground>
       <View style={styles.container}>
         <NeonBorder style={styles.cameraFrame}>
-          {ready && (
+          {ready && Platform.OS !== "web" ? (
             <Camera
               ref={cameraRef}
               style={styles.camera}
               ratio="16:9"
             />
+          ) : (
+            <View style={styles.webFallback}>
+              <Text style={styles.webText}>
+                Camera not supported on Web. Continue to proceed.
+              </Text>
+            </View>
           )}
         </NeonBorder>
 
@@ -70,5 +80,15 @@ const styles = StyleSheet.create({
   },
   button: {
     width: "80%",
+  },
+  webFallback: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: theme.colors.surface,
+    borderRadius: theme.borders.radius.lg,
+  },
+  webText: {
+    color: theme.colors.text,
   },
 });

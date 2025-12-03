@@ -25,8 +25,10 @@ const styles = StyleSheet.create({
     borderRadius: theme.borders.radius.lg,
   },
   inner: {
+    flex: 1,
     backgroundColor: theme.colors.surface,
     borderRadius: theme.borders.radius.lg,
+    overflow: "hidden",
   },
 });
 
